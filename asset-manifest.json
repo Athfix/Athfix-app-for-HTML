@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/athfix-app-for-html/static/css/main.8a5a3785.chunk.css",
+    "main.js": "/athfix-app-for-html/static/js/main.c9125824.chunk.js",
+    "main.js.map": "/athfix-app-for-html/static/js/main.c9125824.chunk.js.map",
+    "runtime-main.js": "/athfix-app-for-html/static/js/runtime-main.8178b0e9.js",
+    "runtime-main.js.map": "/athfix-app-for-html/static/js/runtime-main.8178b0e9.js.map",
+    "static/js/2.507ed0d0.chunk.js": "/athfix-app-for-html/static/js/2.507ed0d0.chunk.js",
+    "static/js/2.507ed0d0.chunk.js.map": "/athfix-app-for-html/static/js/2.507ed0d0.chunk.js.map",
+    "index.html": "/athfix-app-for-html/index.html",
+    "static/css/main.8a5a3785.chunk.css.map": "/athfix-app-for-html/static/css/main.8a5a3785.chunk.css.map",
+    "static/js/2.507ed0d0.chunk.js.LICENSE.txt": "/athfix-app-for-html/static/js/2.507ed0d0.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/athfix-app-for-html/static/media/athfix.b60ecdf5.png",
+    "static/media/Home.css": "/athfix-app-for-html/static/media/down.e7a77ba7.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8178b0e9.js",
+    "static/js/2.507ed0d0.chunk.js",
+    "static/css/main.8a5a3785.chunk.css",
+    "static/js/main.c9125824.chunk.js"
+  ]
+}
