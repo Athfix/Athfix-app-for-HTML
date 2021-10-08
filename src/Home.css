@@ -1,0 +1,774 @@
+
+.comp{
+    width:0px;height:0px;border-radius:20px;
+    background:url("D:\NewAthfix\athfixapp\src\down.png");
+    background-size:100%;position: fixed;transform: translate(-50%,-50%);
+    left:50%;top:50%;background-position: 0px 30px;background-color:rgb(194, 194, 194);
+    background-repeat: no-repeat;transition: ease-in-out 0.5s;
+    overflow: hidden;box-shadow:3px 5px 10px lightgrey;
+}
+.down{
+    width:20px;height:20px;background-color: rgb(231, 37, 37);
+    border-radius: 10px;position:absolute;right:10px;top:-10px;line-height:20px;
+    color:rgb(231, 37, 37);font-family:"Poppins",sans-serif;text-align: center;
+}
+.down:hover{color:white;cursor:pointer;}
+@media (min-width:1515px){
+    #next,#back{ width:50px;height:60px;border-radius:15px 0px 0px 15px;position: absolute;display:none;
+        transition: ease-in-out 0.4s;
+       transform: translate(-100%,-50%);left:100%;top:50%;background-color: rgb(201, 198, 34);color:rgb(255, 255, 255);}
+    #back{
+       border-radius: 0px 15px 15px 0px;transform:translate(-0%,-50%);left:0%;top:50%;
+    }
+    #videoInterface{
+        position: absolute;top:100px;left:20px;overflow: hidden;
+        width:1000px;height:600px;box-shadow: 1px 1px 25px rgb(180, 179, 179);
+        border-radius: 20px;background:linear-gradient(#fd746c,#ff9068)
+    }
+    #iframe{
+        width:870px;height:580px;transform:translate(-50%,-50%);
+        left:50%;top:50%;position: absolute;border-radius: 20px;
+    }
+    #NotesPlat{
+        position: absolute;right:20px;top:300px;width:470px;border-radius: 20px;
+        height:400px;background:linear-gradient( #fdfc47,#24fe41);
+        box-shadow: 1px 1px 20px rgb(167, 166, 166);
+    }
+    #Notes{
+        border:none;background:white;width:400px;height:380px;position: absolute;
+        transform: translate(-50%,-50%);left:50%;top:50%;border-radius:20px;
+    }
+    #playList{
+        list-style-type: none;position: absolute;right:110px;width:300px;top:180px;
+        height:100px;overflow-x: hidden;list-style-type:decimal;z-index:1;
+        background-color: white;box-shadow: 1px 1px 15px rgb(128, 128, 128);text-align: center;
+        border-radius: 20px;
+    }
+    #playList li{
+        margin-top:10px;border-bottom:1px solid black;
+        font-family: "Raleway",sans-serif;height:40px;text-align: center;
+    }
+    #head{
+        width:15%;height:60px;border-radius: 70px;top:70px;
+        text-align: center;position: absolute;right:150px;
+        line-height: 50px;font-size:30px;color:white;
+        font-family: "Raleway",sans-serif;background-color:rgb(126, 126, 126);
+    }
+    #playList::-webkit-scrollbar{
+       width:0px;
+    }
+    #editor{position: fixed;width:80%;height:50px;background-image:url("https://cdn.pixabay.com/photo/2015/12/09/01/02/mandalas-1084082_960_720.jpg");
+        transform:translate(-50%);left:50%;bottom:0px;z-index:2;border-radius:50px 50px 0px 0px;overflow:hidden;
+     box-shadow: -4px 5px 20px rgb(189, 189, 189);transition: ease-in-out 1s;}/*height:530px*/
+    .frame{
+        width:100%;position: absolute;bottom:0px;height:0px;/*height:480px*/
+        border:none;transition: ease-in-out 1s;
+    }
+    #pButton{position:fixed;transform:translate(-100%);left:100%;color:white;top:0px;
+             border-radius:0px 40px 0px 0px;background-color:rgb(27, 25, 25);width:70px;height:52px;}
+             #ad{
+                width:50%;height:430px;overflow: hidden;
+               transform: translateX(-50%);left:50%; margin-top:50%;position: absolute;
+               background: url("D:\NewAthfix\athfixapp\src\back.png");
+               background-size: 60%;background-repeat: no-repeat;
+              }
+              #adText{
+                width:35%;position: absolute;right:0px;margin-top:25px;
+                font-size:17px;font-family:"Poppins",sans-serif;
+                color:rgb(136, 192, 23);
+              }
+              #click{
+                margin-left:60px;width:50%;height:50px;border-radius: 25px;
+                background-color: rgb(64, 64, 250);text-align: center;
+                line-height:45px;font-size:19px;font-weight: bolder;
+                color:white;
+              }
+               
+    footer{
+     margin-top:75%;background-color:rgb(238, 172, 51);
+     position: absolute;height:300px;overflow:hidden;
+     left:0px;right:0px;font-size:21px;list-style-type: none;
+    font-family: "Poppins",sans-serif;
+                }
+                footer li{
+                    color:white;
+                }
+                footer li:hover{
+                    text-decoration: underline;
+                }
+                n{font-weight: bolder;}
+                #Teaching{top:10%;left:10%;position: absolute;}
+                #App{position: absolute;top:10%;left:20%;}
+                #Ath{position: absolute;top:10%;left:33%;}
+                #Follow{position: absolute;top:10%;left:49%;}
+                #Follow li{
+                   display: inline; margin-left:20px;
+                   margin-top:10px;
+                }
+
+    }
+@media (max-width:1515px){
+    #next,#back{ width:50px;height:60px;border-radius:15px 0px 0px 15px;position: absolute;display:none;
+        transition: ease-in-out 0.4s;
+       transform: translate(-100%,-50%);left:100%;top:50%;background-color: rgb(201, 198, 34);color:rgb(255, 255, 255);}
+    #back{
+       border-radius: 0px 15px 15px 0px;transform:translate(-0%,-50%);left:0%;top:50%;
+    }
+    #videoInterface{
+        position: absolute;top:100px;left:10px;overflow: hidden;
+        width:990px;height:600px;box-shadow: 1px 1px 25px rgb(180, 179, 179);
+        border-radius: 20px;background:linear-gradient(#fd746c,#ff9068)
+    }
+    #iframe{
+        width:870px;height:580px;transform:translate(-50%,-50%);
+        left:50%;top:50%;position: absolute;border-radius: 20px;
+    }
+    #NotesPlat{
+        position: absolute;right:10px;top:300px;width:440px;border-radius: 20px;
+        height:400px;background:linear-gradient( #fdfc47,#24fe41);
+        overflow: hidden;
+    }
+    #Notes{
+        border:none;background:white;width:390px;height:380px;position: absolute;
+        transform: translate(-50%,-50%);left:50%;top:50%;border-radius:20px;
+    }
+    #playList{
+        list-style-type: none;position: absolute;right:110px;width:300px;top:180px;
+        height:100px;overflow-x: hidden;list-style-type:decimal;
+        box-shadow:1px 1px 9px rgb(194, 193, 193);border-radius: 20px;
+        text-align: center;
+    }
+    #playList li{
+        margin-top:10px;border-bottom:1px solid black;
+        font-family: "Raleway",sans-serif;height:40px;text-align: center;
+   
+    }
+    #head{
+        width:15%;height:60px;border-radius: 70px;top:70px;
+        text-align: center;position:absolute;right:150px;
+        line-height: 50px;font-size:30px;color:white;
+        font-family: "Raleway",sans-serif;background-color:rgb(126, 126, 126);
+    }
+    #playList::-webkit-scrollbar{
+       width:0px;
+    }
+    #editor{position: fixed;width:80%;height:50px;background-image:url("https://cdn.pixabay.com/photo/2015/12/09/01/02/mandalas-1084082_960_720.jpg");
+        transform:translate(-50%);left:50%;bottom:0px;z-index:2;border-radius:50px 50px 0px 0px;overflow:hidden;
+     box-shadow: -4px 5px 20px rgb(189, 189, 189);transition: ease-in-out 1s;}/*height:530px*/
+    .frame{
+        width:100%;position: absolute;bottom:0px;height:0px;/*height:480px*/
+        border:none;transition: ease-in-out 1s;
+    }
+    #pButton{position:fixed;transform:translate(-100%);left:100%;color:white;top:0px;
+             border-radius:0px 40px 0px 0px;background-color:rgb(27, 25, 25);width:70px;height:50px;}
+             #ad{
+                width:50%;height:430px;overflow: hidden;
+               transform: translateX(-50%);left:50%; margin-top:60%;position: absolute;
+               background: url("D:\NewAthfix\athfixapp\src\back.png");
+               background-size: 60%;background-repeat: no-repeat;
+              }
+              #adText{
+                width:35%;position: absolute;right:0px;margin-top:25px;
+                font-size:17px;font-family:"Poppins",sans-serif;
+                color:rgb(136, 192, 23);
+              }
+              #click{
+                margin-left:60px;width:50%;height:50px;border-radius: 25px;
+                background-color: rgb(64, 64, 250);text-align: center;
+                line-height:45px;font-size:19px;font-weight: bolder;
+                color:white;
+              }
+               
+    footer{
+     margin-top:85%;background-color:rgb(238, 172, 51);
+     position: absolute;height:300px;overflow:hidden;
+     left:0px;right:0px;font-size:21px;list-style-type: none;
+    font-family: "Poppins",sans-serif;
+                }
+                footer li{
+                    color:white;
+                }
+                footer li:hover{
+                    text-decoration: underline;
+                }
+                n{font-weight: bolder;}
+                n{font-weight: bolder;}
+                #Teaching{top:10%;left:10%;position: absolute;}
+                #App{position: absolute;top:10%;left:20%;}
+                #Ath{position: absolute;top:10%;left:33%;}
+                #Follow{position: absolute;top:10%;left:49%;}
+                #Follow li{
+                   display: inline; margin-left:20px;
+                   margin-top:10px;
+                }
+
+}
+@media (max-width:1455px){
+    #videoInterface{width:950px;}
+    #iframe{width:840px;}
+    #NotesPlat{width:440px;}
+    #Notes{width:380px;}
+}
+@media (max-width:1410px){
+    #videoInterface{width:900px;}
+    #iframe{width:820px;}
+    #NotesPlat{width:410px;}
+    #Notes{width:380px;}
+}
+@media (max-width:1360px){
+    #videoInterface{width:890px;}
+    #iframe{width:820px;}
+    #NotesPlat{width:380px;}
+    #Notes{width:360px;}
+    #playList{
+      right:70px;
+    }
+}
+@media (max-width:1300px){
+    #videoInterface{width:830px;height:570px;}
+    #iframe{width:750px;height:550px;}
+    #NotesPlat{width:380px;top:280px;}
+    #Notes{width:350px;height:360px;}
+    #Notes::-webkit-scrollbar-track{
+        width:0px;
+    }
+    #playList{height:80px;}
+}
+@media (max-width:1235px){
+    #videoInterface{width:760px;height:500px;left:2px;}
+    #iframe{width:650px;height:450px;}
+    #NotesPlat{width:370px;top:100px;height:500px;right:2px;}
+    #Notes{width:350px;height:450px;}
+    #Notes::-webkit-scrollbar-track{
+        width:0px;
+    }
+    #playList{ left:400px;width:520px;top:670px;height:300px; }
+    #playList li{border-bottom:1px solid black;box-shadow:0px 0px 5px white; }
+    #head{top:600px;left:600px;height:40px;border-radius: 10px; font-weight: lighter;line-height:40px; position: absolute;}
+    footer{
+        margin-top:120%;
+    }
+}
+@media (max-width:1135px){
+    #videoInterface{width:630px;height:420px;left:2px;}
+    #iframe{width:590px;height:400px;}
+    #NotesPlat{width:400px;top:100px;height:420px;right:2px;}
+    #Notes{width:350px;height:400px;}
+    #Notes::-webkit-scrollbar-track{
+        width:0px;
+    }
+    #playList{
+        position: absolute;left:190px;width:520px;top:590px;
+        height:300px;
+    }
+    #playList li{
+        margin-top:10px;border-bottom:1px solid black;box-shadow:0px 0px 5px white;
+    }
+    #head{
+        top:520px;left:400px; height:40px;line-height: 40px;border-radius: 5px;}
+}
+@media (max-width:1040px){
+    #NotesPlat{width:300px;top:100px;height:420px;right:2px;}
+    #Notes{width:280px;height:400px;}
+    #editor{position: fixed;width:95%;height:50px;background-image:url("https://cdn.pixabay.com/photo/2015/12/09/01/02/mandalas-1084082_960_720.jpg");
+        transform:translate(-50%);left:50%;bottom:0px;z-index:2;border-radius:50px 50px 0px 0px;overflow:hidden;
+     box-shadow: -4px 5px 20px rgb(189, 189, 189);transition: ease-in-out 1s;}/*height:530px*/
+    .frame{
+        width:100%;position: absolute;bottom:0px;height:0px;/*height:480px*/
+        border:none;
+    }
+    #pButton{position:fixed;transform:translate(-100%);left:100%;color:white;top:0px;
+             border-radius:0px 40px 0px 0px;background-color:rgb(27, 25, 25);width:70px;height:50px;}
+             #playList{
+                 height:300px;
+             }
+             #ad{
+                width:80%;height:430px;overflow: hidden;
+               transform: translateX(-50%);left:50%; margin-top:70%;position: absolute;
+               background: url("D:\NewAthfix\athfixapp\src\back.png");
+               background-size: 60%;background-repeat: no-repeat;
+              }
+              #adText{
+                width:35%;position: absolute;right:0px;margin-top:25px;
+                font-size:17px;font-family:"Poppins",sans-serif;
+                color:rgb(136, 192, 23);
+              }
+              #click{
+                margin-left:60px;width:50%;height:50px;border-radius: 25px;
+                background-color: rgb(64, 64, 250);text-align: center;
+                line-height:45px;font-size:19px;font-weight: bolder;
+                color:white;
+              }
+               
+    footer{
+     margin-top:150%;background-color:rgb(238, 172, 51);
+     position: absolute;height:300px;overflow:hidden;
+     left:0px;right:0px;font-size:21px;list-style-type: none;
+    font-family: "Poppins",sans-serif;
+                }
+                footer li{
+                    color:white;
+                }
+                footer li:hover{
+                    text-decoration: underline;
+                }
+                n{font-weight: bolder;}
+                #Teaching{top:10%;left:10%;position: absolute;}
+                #App{position: absolute;top:10%;left:25%;}
+                #Ath{position: absolute;top:10%;left:42%;}
+                #Follow{position: absolute;top:10%;left:65%;}
+                
+                #Follow li{
+                   display: inline; margin-left:20px;
+                   margin-top:10px;
+                }
+
+
+}
+@media (max-width:935px){
+    #videoInterface{width:550px;height:380px;left:2px;}
+    #iframe{width:490px;height:350px;}
+    #NotesPlat{width:280px;top:100px;height:380px;right:2px;}
+    #Notes{width:260px;height:360px;}
+    #Notes::-webkit-scrollbar-track{
+        width:0px;
+    }
+    footer{
+        margin-top:130%;
+    }
+    #playList{
+        list-style-type: none;position: absolute;left:150px;width:450px;top:550px;
+        height:300px;overflow-x: hidden;list-style-type:decimal;background-color: white;
+        box-shadow: -1px 5px 15px rgb(187, 186, 186);border-radius: 20px;
+        z-index: 1;text-align: center;
+    }
+    #playList li{
+        margin-top:10px;border-bottom:1px solid black;box-shadow:0px 0px 5px white;
+    }
+    #head{
+        width:150px;height:40px;border-radius:10px;top:470px;
+        text-align: center;position:absolute;left:300px;
+        line-height: 40px;font-size:20px;color:white;
+        font-family: "Raleway",sans-serif;background-color:rgb(126, 126, 126);
+    }
+    #ad{
+        width:50%;height:430px;overflow: hidden;
+       transform: translateX(-50%);left:50%; margin-top:70%;position: absolute;
+       background: url("D:\NewAthfix\athfixapp\src\back.png");
+       background-size: 60%;background-repeat: no-repeat;
+      }
+      #adText{
+        width:35%;position: absolute;right:0px;margin-top:25px;
+        font-size:17px;font-family:"Poppins",sans-serif;
+        color:rgb(136, 192, 23);
+      }
+      #click{
+        margin-left:60px;width:50%;height:50px;border-radius: 25px;
+        background-color: rgb(64, 64, 250);text-align: center;
+        line-height:45px;font-size:19px;font-weight: bolder;
+        color:white;
+      }
+       
+footer{
+margin-top:160%;background-color:rgb(238, 172, 51);
+position: absolute;height:300px;overflow:hidden;
+left:0px;right:0px;font-size:21px;list-style-type: none;
+font-family: "Poppins",sans-serif;
+        }
+        footer li{
+            color:white;
+        }
+        footer li:hover{
+            text-decoration: underline;
+        }
+        n{font-weight: bolder;}
+        #Follow li{
+           display: inline; margin-left:20px;
+           margin-top:10px;
+        }
+
+    #Teaching{top:10%;left:10%;position: absolute;}
+    #App{position: absolute;top:10%;left:32%;}
+    #Ath{position: absolute;top:11%;left:60%;}
+    #Follow{position: absolute;top:50%;left:10%;}
+    
+}
+@media (max-width:770px){
+    #videoInterface{width:600px;height:380px;left:50px;}
+    #iframe{width:530px;height:350px;}
+    #NotesPlat{width:280px;top:490px;height:360px;right:2px;}
+    #Notes{width:260px;height:340px;}
+    #Notes::-webkit-scrollbar-track{
+        width:0px;
+    }
+    #playList{
+        list-style-type: none;position: absolute;left:50px;width:300px;top:550px;
+        height:300px;overflow-x: hidden;list-style-type:decimal;background-color: white;
+        box-shadow: 1px 1px 5px lightgrey;
+        z-index: 1;text-align: center;
+    }
+    #playList li{
+        margin-top:10px;border-bottom:1px solid black;box-shadow:0px 0px 5px white;
+    }
+    #head{
+        width:150px;height:40px;border-radius:10px;top:470px;
+        text-align: center;position:absolute;left:100px;
+        line-height: 40px;font-size:20px;color:white;
+        font-family: "Raleway",sans-serif;background-color:rgb(126, 126, 126);
+    }  n{font-weight: bolder;}
+    #ad{
+        width:50%;height:430px;overflow: hidden;
+       transform: translateX(-50%);left:50%; margin-top:50%;position: absolute;
+       background: url("D:\NewAthfix\athfixapp\src\back.png");
+       background-size: 60%;background-repeat: no-repeat;
+      }
+      #adText{
+        width:35%;position: absolute;right:0px;margin-top:25px;
+        font-size:17px;font-family:"Poppins",sans-serif;
+        color:rgb(136, 192, 23);
+      }
+      #click{
+        margin-left:60px;width:50%;height:50px;border-radius: 25px;
+        background-color: rgb(64, 64, 250);text-align: center;
+        line-height:45px;font-size:19px;font-weight: bolder;
+        color:white;
+      }
+       
+footer{
+margin-top:180%;background-color:rgb(238, 172, 51);
+position: absolute;height:300px;overflow:hidden;
+left:0px;right:0px;font-size:21px;list-style-type: none;
+font-family: "Poppins",sans-serif;
+        }
+        footer li{
+            color:white;font-size:16px;
+        }
+        footer li:hover{
+            text-decoration: underline;
+        }
+        n{font-weight: bolder;font-size:18px;}
+        #Follow li{
+           display: inline; margin-left:20px;
+           margin-top:10px;
+        }
+
+        #Teaching{top:10%;left:10%;position: absolute;}
+        #App{position: absolute;top:10%;left:32%;}
+        #Ath{position: absolute;top:11%;left:60%;}
+        #Follow{position: absolute;top:50%;left:10%;}
+       
+}
+@media (max-width:650px){
+    #videoInterface{width:600px;height:380px;left:5px;}
+    #iframe{width:530px;height:350px;}
+    #NotesPlat{width:280px;top:490px;height:360px;right:2px;}
+    #Notes{width:260px;height:340px;}
+    #Notes::-webkit-scrollbar-track{
+        width:0px;
+    }
+    #playList{
+        list-style-type: none;position: absolute;left:10px;width:270px;top:550px;
+        height:300px;overflow-x: hidden;list-style-type:decimal;background-color: white;
+        box-shadow: 1px 1px 15px rgb(184, 184, 184);
+        z-index: 1;text-align: center;border-radius: 20px;
+    }
+    #playList li{
+        margin-top:10px;border-bottom:1px solid black;box-shadow:0px 0px 5px white;
+    }
+    #head{
+        width:150px;height:40px;border-radius:10px;top:470px;
+        text-align: center;position:absolute;left:100px;
+        line-height: 40px;font-size:20px;color:white;
+        font-family: "Raleway",sans-serif;background-color:rgb(126, 126, 126);
+    } 
+    #ad{
+        width:50%;height:430px;overflow: hidden;
+       transform: translateX(-50%);left:50%; margin-top:50%;position: absolute;
+       background: url("D:\NewAthfix\athfixapp\src\back.png");
+       background-size: 60%;background-repeat: no-repeat;
+      }
+      #adText{
+        width:35%;position: absolute;right:0px;margin-top:25px;
+        font-size:17px;font-family:"Poppins",sans-serif;
+        color:rgb(136, 192, 23);
+      }
+      #click{
+        margin-left:60px;width:50%;height:50px;border-radius: 25px;
+        background-color: rgb(64, 64, 250);text-align: center;
+        line-height:45px;font-size:19px;font-weight: bolder;
+        color:white;
+      }
+       
+footer{
+margin-top:190%;background-color:rgb(238, 172, 51);
+position: absolute;height:300px;overflow:hidden;
+left:0px;right:0px;font-size:21px;list-style-type: none;
+font-family: "Poppins",sans-serif;
+        }
+        footer li{
+            color:white;font-size: 17px;
+        }
+        footer li:hover{
+            text-decoration: underline;
+        }
+        n{font-weight: bolder;font-size: 17px;}
+        #Follow li{
+           display: inline; margin-left:20px;
+           margin-top:10px;
+        }
+
+    #Teaching{top:10%;left:10%;position: absolute;}
+    #App{position: absolute;top:10%;left:28%;}
+    #Ath{position: absolute;top:10%;left:50%;}
+    #Follow{position: absolute;top:50%;left:10%;}
+    
+}
+@media (max-width:610px){
+    #videoInterface{
+        left:5px;right:0px;width:530px;
+    }
+    #iframe{
+       width:500px;
+    }
+    #NotesPlat{
+        width:530px;left:5px;top:570px;
+    }
+    #Notes{
+        width:490px;
+    }
+    #playList{
+        list-style-type: none;position: absolute;right:0px;width:80%;top:550px;
+        height:0px;overflow-x: hidden;list-style-type:decimal;background-color: white;
+        box-shadow: 1px 1px 5px lightgrey;
+        z-index: 1;text-align: center;
+    }
+    #playList li{
+        margin-top:10px;border-bottom:1px solid black;box-shadow:0px 0px 5px white;
+    }
+    #head{
+        width:150px;height:40px;border-radius:10px;top:470px;
+        text-align: center;position:absolute;right:160px;
+        line-height: 40px;font-size:20px;color:white;
+        font-family: "Raleway",sans-serif;background-color:rgb(126, 126, 126);
+    } 
+    #ad{
+        width:50%;height:430px;overflow: hidden;
+       transform: translateX(-50%);left:50%; margin-top:50%;position: absolute;
+       background: url("D:\NewAthfix\athfixapp\src\back.png");
+       background-size: 60%;background-repeat: no-repeat;
+      }
+      #adText{
+        width:35%;position: absolute;right:0px;margin-top:25px;
+        font-size:17px;font-family:"Poppins",sans-serif;
+        color:rgb(136, 192, 23);
+      }
+      #click{
+        margin-left:60px;width:50%;height:50px;border-radius: 25px;
+        background-color: rgb(64, 64, 250);text-align: center;
+        line-height:45px;font-size:19px;font-weight: bolder;
+        color:white;
+      }
+       
+footer{
+margin-top:250%;background-color:rgb(238, 172, 51);
+position: absolute;height:300px;overflow:hidden;
+left:0px;right:0px;font-size:21px;list-style-type: none;
+font-family: "Poppins",sans-serif;
+        }
+        footer li{
+            color:white;
+        }
+        footer li:hover{
+            text-decoration: underline;
+        }
+        n{font-weight: bolder;}
+        #Follow li{
+           display: inline; margin-left:20px;
+           margin-top:10px;
+        }
+        #Teaching{top:10%;left:10%;position: absolute;}
+        #App{position: absolute;top:10%;left:32%;}
+        #Ath{position: absolute;top:11%;left:60%;}
+        #Follow{position: absolute;top:50%;left:10%;}
+       
+}
+@media (max-width:530px){
+    #videoInterface{width:470px;height:340px;left:5px;}
+    #iframe{width:440px;height:300px;}
+    #NotesPlat{width:470px;top:490px;height:360px;right:2px;}
+    #Notes{width:430px;height:340px;}
+    #Notes::-webkit-scrollbar-track{
+        width:0px;
+    }
+    #playList{
+        list-style-type: none;position: absolute;right:0px;width:80%;top:490px;
+        height:0px;overflow-x: hidden;list-style-type:decimal;background-color: white;
+        box-shadow: 1px 1px 5px lightgrey;
+        z-index: 1;text-align: center;
+    }
+    #playList li{
+        margin-top:10px;border-bottom:1px solid black;box-shadow:0px 0px 5px white;
+    }
+    #head{
+        width:150px;height:40px;border-radius:10px;top:425px;
+        text-align: center;position:absolute;right:160px;
+        line-height: 40px;font-size:20px;color:white;
+        font-family: "Raleway",sans-serif;background-color:rgb(126, 126, 126);
+    }  
+    .frame{bottom:0px;}
+    #editor{
+       border-radius:20px 20px 0px 0px;width:100%;
+    }
+    #pButton{
+       margin-left:1%;width:60px;
+    }
+    #ad{
+        width:50%;height:430px;overflow: hidden;
+       transform: translateX(-50%);left:50%; margin-top:50%;position: absolute;
+       background: url("D:\NewAthfix\athfixapp\src\back.png");
+       background-size: 60%;background-repeat: no-repeat;
+      }
+      #adText{
+        width:35%;position: absolute;right:0px;margin-top:25px;
+        font-size:17px;font-family:"Poppins",sans-serif;
+        color:rgb(136, 192, 23);
+      }
+      #click{
+        margin-left:60px;width:50%;height:50px;border-radius: 25px;
+        background-color: rgb(64, 64, 250);text-align: center;
+        line-height:45px;font-size:19px;font-weight: bolder;
+        color:white;
+      }
+       
+footer{
+margin-top:250%;background-color:rgb(238, 172, 51);
+position: absolute;height:300px;overflow:hidden;
+left:0px;right:0px;font-size:21px;list-style-type: none;
+font-family: "Poppins",sans-serif;
+        }
+        footer li{
+            color:white;
+        }
+        footer li:hover{
+            text-decoration: underline;
+        }
+        n{font-weight: bolder;}
+        #Follow li{
+           display: inline; margin-left:20px;
+           margin-top:10px;
+        }
+
+    #Teaching{top:10%;left:10%;position: absolute;}
+    #App{position: absolute;top:10%;left:32%;}
+    #Ath{position: absolute;top:11%;left:60%;}
+    #Follow{position: absolute;top:50%;left:10%;}
+    
+}
+@media (max-width:470px){
+    #videoInterface{width:100%;height:300px;border-radius:0px;left:0px;}
+    #iframe{width:100%;height:300px;border-radius: 0px;}
+    #NotesPlat{width:100%;top:490px;height:360px;left:0px;border-radius: 0px;}
+    #Notes{width:100%;height:340px;border-radius: 0px;}
+    #playList{
+        list-style-type: none;position: absolute;right:0px;width:80%;top:450px;
+        height:0px;overflow-x: hidden;list-style-type:decimal;background-color: white;
+        box-shadow: 1px 1px 5px lightgrey;
+        z-index: 1;text-align: center;
+    }
+    #playList li{
+        margin-top:10px;border-bottom:1px solid black;box-shadow:0px 0px 5px white;
+    }
+    #head{
+        width:150px;height:40px;border-radius:10px;top:390px;
+        text-align: center;position:absolute;right:145px;
+        line-height: 40px;font-size:20px;color:white;
+        font-family: "Raleway",sans-serif;background-color:rgb(126, 126, 126);
+    }  
+    #ad{
+        width:50%;height:430px;overflow: hidden;
+       transform: translateX(-50%);left:50%; margin-top:20%;position: absolute;
+       background: url("D:\NewAthfix\athfixapp\src\back.png");
+       background-size: 60%;background-repeat: no-repeat;
+      }
+      #adText{
+        width:35%;position: absolute;right:0px;margin-top:25px;
+        font-size:17px;font-family:"Poppins",sans-serif;
+        color:rgb(136, 192, 23);
+      }
+      #click{
+        margin-left:60px;width:50%;height:50px;border-radius: 25px;
+        background-color: rgb(64, 64, 250);text-align: center;
+        line-height:45px;font-size:19px;font-weight: bolder;
+        color:white;
+      }
+       
+footer{
+margin-top:330%;background-color:rgb(238, 172, 51);
+position: absolute;height:300px;overflow:hidden;
+left:0px;right:0px;font-size:21px;list-style-type: none;
+font-family: "Poppins",sans-serif;
+        }
+        footer li{
+            color:white;font-size:15px;
+        }
+        footer li:hover{
+            text-decoration: underline;
+        }
+        n{font-weight: bolder;font-size:16px;}
+        #Follow li{
+           display: inline; margin-left:20px;
+           margin-top:10px;
+        }
+
+    #Teaching{top:10%;left:7%;position: absolute;}
+    #App{position: absolute;top:10%;left:30%;}
+    #Ath{position: absolute;top:11%;left:62%;}
+    #Follow{position: absolute;top:50%;left:10%;}
+    
+}
+@media (max-width:380px){
+    #iframe{height:280px}
+   #NotesPlat{width:100%;left:0px;border-radius: 0px;top:470px;}
+   #Notes{  width:100%;border-radius: 0px;  }
+   #ad{
+    width:50%;height:430px;overflow: hidden;
+   transform: translateX(-50%);left:50%; margin-top:50%;position: absolute;
+   background: url("D:\NewAthfix\athfixapp\src\back.png");
+   background-size: 60%;background-repeat: no-repeat;
+  }
+  #adText{
+    width:35%;position: absolute;right:0px;margin-top:25px;
+    font-size:17px;font-family:"Poppins",sans-serif;
+    color:rgb(136, 192, 23);
+  }
+  #click{
+    margin-left:10px;width:80%;height:50px;border-radius: 25px;
+    background-color: rgb(64, 64, 250);text-align: center;
+    line-height:45px;font-size:19px;font-weight: bolder;
+    color:white;
+  }
+   
+footer{
+margin-top:330%;background-color:rgb(238, 172, 51);
+position: absolute;height:300px;overflow:hidden;
+left:0px;right:0px;font-size:21px;list-style-type: none;
+font-family: "Poppins",sans-serif;
+    }
+    footer li{
+        color:white;font-size:15px;
+    }
+    footer li:hover{
+        text-decoration: underline;
+    }
+    n{font-weight: bolder;font-size:14px;}
+    #Follow li{
+       display: inline; margin-left:20px;
+       margin-top:10px;
+    }
+
+#Teaching{top:10%;left:7%;position: absolute;}
+#App{position: absolute;top:10%;left:32%;}
+#Ath{position: absolute;top:12%;left:64%;}
+#Follow{position: absolute;top:50%;left:10%;}
+
+}
