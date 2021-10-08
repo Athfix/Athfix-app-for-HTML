@@ -1,6 +1,7 @@
 
 import './App.css';
 import $ from "jquery";
+import Home from './Home';
 
 function App() {
   return (<>
@@ -28,7 +29,7 @@ function App() {
 </svg>Completion</li>
       <li><svg id="men" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="orange" class="bi bi-shield-fill-check" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647z"/>
-</svg><a href="/Privacy">Privacy</a></li>
+</svg><a href=" https://athfix.github.io/Privacy/">Privacy</a></li>
       <li><img id="men" width="40px" src={"https://cdn-icons-png.flaticon.com/128/232/232416.png"}/><a href="https://www.makeuseof.com/tag/top-10-professional-sample-code-websites-for-programmers/">Google it</a></li>
     <li>Feed back</li>
     </div>
@@ -50,7 +51,7 @@ function App() {
     </div>
 
     <div id="resource">
-      <li><a style={{color:"white"}} href="/Notes"><k className="ot">Notes</k><svg style={{marginTop:"10px",marginLeft:"10px"}} xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
+      <li><a style={{color:"white"}} href="https://athfix.github.io/NotesOfHTML/"><k className="ot">Notes</k><svg style={{marginTop:"10px",marginLeft:"10px"}} xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
   <path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
   <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
   <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
@@ -93,6 +94,7 @@ function App() {
      <fieldset><legend>Your Query goes here</legend><textarea style={{marginTop:"30px"}} rows="10" cols="40"/></fieldset><br/>
      <input type="submit" id="sub" value="submit"/>
     </div></form>
+    <Home/>
   </>);
 }
 
