@@ -202,12 +202,6 @@ fieldset{
   }
  
 }
-@media (max-width:450px){
-  #ad{
-    margin-top:250%;width:100%;
-  }
-  #adText{font-size:14px;}
-}
 
 @media (max-width:1000px){
   form{
@@ -216,6 +210,9 @@ fieldset{
 }
 @media (max-width:400px){
   form{
-    width:95%;
+    width:95%;height:90%;
+  }
+  textarea{
+    width:90%;height:200px;
   }
 }

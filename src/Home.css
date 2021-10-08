@@ -248,6 +248,23 @@
     footer{
         margin-top:120%;
     }
+    #ad{
+        width:60%;height:430px;overflow: hidden;
+       transform: translateX(-50%);left:50%; margin-top:90%;position: absolute;
+       background: url("D:\AthfixNewApp\athfixapp\src\back.png");
+       background-size: 60%;background-repeat: no-repeat;
+      }
+      #adText{
+        width:35%;position: absolute;right:0px;margin-top:25px;
+        font-size:17px;font-family:"Poppins",sans-serif;
+        color:rgb(136, 192, 23);
+      }
+      #click{
+        margin-left:60px;width:50%;height:50px;border-radius: 25px;
+        background-color: rgb(64, 64, 250);text-align: center;
+        line-height:45px;font-size:19px;font-weight: bolder;
+        color:white;
+      }
 }
 @media (max-width:1135px){
     #videoInterface{width:630px;height:420px;left:2px;}
@@ -284,7 +301,7 @@
              }
              #ad{
                 width:80%;height:430px;overflow: hidden;
-               transform: translateX(-50%);left:50%; margin-top:70%;position: absolute;
+               transform: translateX(-50%);left:50%; margin-top:90%;position: absolute;
                background: url("D:\AthfixNewApp\athfixapp\src\back.png");
                background-size: 60%;background-repeat: no-repeat;
               }
@@ -352,8 +369,8 @@
         font-family: "Raleway",sans-serif;background-color:rgb(126, 126, 126);
     }
     #ad{
-        width:50%;height:430px;overflow: hidden;
-       transform: translateX(-50%);left:50%; margin-top:70%;position: absolute;
+        width:100%;height:430px;overflow: hidden;
+       transform: translateX(-50%);left:50%; margin-top:110%;position: absolute;
        background: url("D:\AthfixNewApp\athfixapp\src\back.png");
        background-size: 60%;background-repeat: no-repeat;
       }
@@ -417,8 +434,8 @@ font-family: "Poppins",sans-serif;
         font-family: "Raleway",sans-serif;background-color:rgb(126, 126, 126);
     }  n{font-weight: bolder;}
     #ad{
-        width:50%;height:430px;overflow: hidden;
-       transform: translateX(-50%);left:50%; margin-top:50%;position: absolute;
+        width:100%;height:430px;overflow: hidden;
+       transform: translateX(-50%);left:50%; margin-top:130%;position: absolute;
        background: url("D:\AthfixNewApp\athfixapp\src\back.png");
        background-size: 60%;background-repeat: no-repeat;
       }
@@ -482,8 +499,8 @@ font-family: "Poppins",sans-serif;
         font-family: "Raleway",sans-serif;background-color:rgb(126, 126, 126);
     } 
     #ad{
-        width:50%;height:430px;overflow: hidden;
-       transform: translateX(-50%);left:50%; margin-top:50%;position: absolute;
+        width:100%;height:430px;overflow: hidden;
+       transform: translateX(-50%);left:50%; margin-top:140%;position: absolute;
        background: url("D:\AthfixNewApp\athfixapp\src\back.png");
        background-size: 60%;background-repeat: no-repeat;
       }
@@ -552,8 +569,8 @@ font-family: "Poppins",sans-serif;
         font-family: "Raleway",sans-serif;background-color:rgb(126, 126, 126);
     } 
     #ad{
-        width:50%;height:430px;overflow: hidden;
-       transform: translateX(-50%);left:50%; margin-top:50%;position: absolute;
+        width:100%;height:430px;overflow: hidden;
+       transform: translateX(-50%);left:50%; margin-top:180%;position: absolute;
        background: url("D:\AthfixNewApp\athfixapp\src\back.png");
        background-size: 60%;background-repeat: no-repeat;
       }
@@ -623,8 +640,8 @@ font-family: "Poppins",sans-serif;
        margin-left:1%;width:60px;
     }
     #ad{
-        width:50%;height:430px;overflow: hidden;
-       transform: translateX(-50%);left:50%; margin-top:50%;position: absolute;
+        width:100%;height:430px;overflow: hidden;
+       transform: translateX(-50%);left:50%; margin-top:190%;position: absolute;
        background: url("D:\AthfixNewApp\athfixapp\src\back.png");
        background-size: 60%;background-repeat: no-repeat;
       }
@@ -685,14 +702,14 @@ font-family: "Poppins",sans-serif;
         font-family: "Raleway",sans-serif;background-color:rgb(126, 126, 126);
     }  
     #ad{
-        width:50%;height:430px;overflow: hidden;
-       transform: translateX(-50%);left:50%; margin-top:20%;position: absolute;
+        width:100%;height:430px;overflow: hidden;
+       transform: translateX(-50%);left:50%; margin-top:210%;position: absolute;
        background: url("D:\AthfixNewApp\athfixapp\src\back.png");
        background-size: 60%;background-repeat: no-repeat;
       }
       #adText{
-        width:35%;position: absolute;right:0px;margin-top:25px;
-        font-size:17px;font-family:"Poppins",sans-serif;
+        width:40%;position: absolute;right:0px;margin-top:25px;
+        font-size:15px;font-family:"Poppins",sans-serif;
         color:rgb(136, 192, 23);
       }
       #click{
@@ -731,14 +748,14 @@ font-family: "Poppins",sans-serif;
    #NotesPlat{width:100%;left:0px;border-radius: 0px;top:470px;}
    #Notes{  width:100%;border-radius: 0px;  }
    #ad{
-    width:50%;height:430px;overflow: hidden;
-   transform: translateX(-50%);left:50%; margin-top:50%;position: absolute;
+    width:100%;height:430px;overflow: hidden;
+   transform: translateX(-50%);left:50%; margin-top:250%;position: absolute;
    background: url("D:\AthfixNewApp\athfixapp\src\back.png");
    background-size: 60%;background-repeat: no-repeat;
   }
   #adText{
-    width:35%;position: absolute;right:0px;margin-top:25px;
-    font-size:17px;font-family:"Poppins",sans-serif;
+    width:40%;position: absolute;right:0px;margin-top:25px;
+    font-size:14px;font-family:"Poppins",sans-serif;
     color:rgb(136, 192, 23);
   }
   #click{
@@ -770,5 +787,4 @@ font-family: "Poppins",sans-serif;
 #App{position: absolute;top:10%;left:32%;}
 #Ath{position: absolute;top:12%;left:64%;}
 #Follow{position: absolute;top:50%;left:10%;}
-
 }

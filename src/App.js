@@ -282,7 +282,7 @@ $("document").ready(function(){
   $("#setting li:nth-child(3),#menuBar li:nth-child(7)").click(function(){
     $("form").attr('style','width:30%;height:75%');
     if($(window).width()<1000 && $(window).width()>400){
-      $("form").attr('style','width:80%;height:300px');
+      $("form").attr('style','width:80%;height:85%');
     }
     if( $(window).width()<400){
       $("form").attr('style','width:95%;height:75%');
