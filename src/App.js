@@ -1,5 +1,6 @@
-import logo from './logo.svg';
+
 import './App.css';
+import $ from "jquery";
 
 function App() {
   return (<>
@@ -95,4 +96,196 @@ function App() {
   </>);
 }
 
+
+$("document").ready(function(){
+  var menu=true;var set=true;var quiz=true;var resou=true;
+    $("#menu").click(function(){
+       if(menu==true){
+         $("#menuBar").attr("style","left:0px");
+         $(".App").attr("style","position:fixed");         
+       }
+       else{
+        $("#menuBar").attr("style","left:-300px");
+        $(".App").attr("style","position:absolute");
+        $("#setting li").attr("style","margin-left:85px;");
+         setTimeout(()=>{$("#setting").attr("style","width:0px")},1000);
+         $("#resource li").attr("style","margin-left:85px;");
+         setTimeout(()=>{$("#resource").attr("style","width:0px")},1000);
+         $("#quiz").attr("style","margin-left:85px;");
+         setTimeout(()=>{$("#quiz li").attr("style","width:0px")},1000);
+         $("#BrekTime").height("0px");
+         set=quiz=resou=brek=true;   
+       }
+       menu=!menu;
+    })
+  
+    $("#menuBar li:nth-child(2)").click(function(){
+      if(set==true){
+        $("#setting").attr("style","width:80px");
+        $("#setting li").attr("style","margin-left:15px;");
+        $("#quiz").attr("style","margin-left:85px;");
+     setTimeout(()=>{$("#quiz li").attr("style","width:0px")},1000);
+     $("#resource li").attr("style","margin-left:85px;");
+     setTimeout(()=>{$("#resource").attr("style","width:0px")},1000);
+     quiz=resou=true;
+      }
+      else{
+        $("#setting li").attr("style","margin-left:85px;");
+     setTimeout(()=>{$("#setting").attr("style","width:0px")},1000);
+       }
+      set=!set;
+    })
+    
+    $("#menuBar li:nth-child(4)").click(function(){
+      if(quiz==true){
+        $("#quiz").attr("style","width:140px");
+        $("#quiz li").attr("style","margin-left:15px;");
+        $("#setting li").attr("style","margin-left:85px;");
+        setTimeout(()=>{$("#setting").attr("style","width:0px")},1000);
+        $("#resource li").attr("style","margin-left:85px;");
+        setTimeout(()=>{$("#resource").attr("style","width:0px")},1000);   
+        set=resou=true;   
+      }
+      else{
+        $("#quiz").attr("style","margin-left:85px;");
+     setTimeout(()=>{$("#quiz li").attr("style","width:0px")},1000);
+       }
+      quiz=!quiz;
+    })
+
+    $("#menuBar li:nth-child(3)").click(function(){
+      if(resou==true){
+        $("#resource").attr("style","width:80px");
+        $("#resource li").attr("style","margin-left:15px;");
+        $("#setting li").attr("style","margin-left:85px;");
+        setTimeout(()=>{$("#setting").attr("style","width:0px")},1000);
+        $("#quiz").attr("style","margin-left:85px;");
+        setTimeout(()=>{$("#quiz li").attr("style","width:0px")},1000);   
+        set=quiz=true;   
+      }
+      else{
+        $("#resource li").attr("style","margin-left:85px;");
+     setTimeout(()=>{$("#resource").attr("style","width:0px")},1000);
+       }
+      resou=!resou;
+    })
+   
+
+    $("#setting li:nth-child(1)").mouseover(function(){
+      $(".ed").attr("style","opacity:1");
+      setTimeout(()=>{ $(".ed").attr("style","opacity:0");},1000);
+    })
+     
+    $("#setting li:nth-child(2)").mouseover(function(){
+      $(".Be").attr("style","opacity:1");
+      setTimeout(()=>{ $(".Be").attr("style","opacity:0");},1000);
+    })
+
+    $("#setting li:nth-child(3)").mouseover(function(){
+      $(".No").attr("style","opacity:1");
+      setTimeout(()=>{ $(".No").attr("style","opacity:0");},1000);
+    })
+
+    $("#resource li:nth-child(1)").mouseover(function(){
+      $(".ot").attr("style","opacity:1");
+      setTimeout(()=>{ $(".ot").attr("style","opacity:0");},1000);
+    })
+
+    $("#resource li:nth-child(2)").mouseover(function(){
+      $(".Bo").attr("style","opacity:1");
+      setTimeout(()=>{ $(".Bo").attr("style","opacity:0");},1000);
+    })
+
+    $("#resource li:nth-child(3)").mouseover(function(){
+      $(".Po").attr("style","opacity:1");
+      setTimeout(()=>{ $(".Po").attr("style","opacity:0");},1000);
+    })
+
+      var brek=true;
+    $("#setting li:nth-child(2)").click(function(){
+       if(brek==true){ $("#BrekTime").height("180px");}
+       else{ $("#BrekTime").height("0px");}
+       brek=!brek;
+    })
+  
+    var time=960000;
+    $("#BrekTime li:nth-child(1)").click(function(){
+      time=960000;
+      $("#BrekTime li:nth-child(1)").attr("style","color:white;background:black;");
+      $("#BrekTime li:nth-child(3),#BrekTime li:nth-child(2)").attr("style","color:black;background:white;");
+    });
+
+    $("#BrekTime li:nth-child(2)").click(function(){
+      time=1560000;
+      $("#BrekTime li:nth-child(2)").attr("style","color:white;background:black;");
+      $("#BrekTime li:nth-child(1),#BrekTime li:nth-child(3)").attr("style","color:black;background:white;");
+    });
+
+    $("#BrekTime li:nth-child(3)").click(function(){
+      $("#BrekTime li:nth-child(3)").attr("style","color:white;background:black;");
+      $("#BrekTime li:nth-child(1),#BrekTime li:nth-child(2)").attr("style","color:black;background:white;");
+       time=2160000;
+    });
+
+  $("#videoInterface").click(function(){
+   setTimeout(()=>{
+    $("#none").attr("src","http://ellisonleao.github.io/clumsy-bird/");
+      $("#alertMess").attr("style","width:500px;height:400px");
+      if($(window).width()<700){$("#alertMess").attr("style","width:80%;height:400px");}
+    if($(window).width()<700){
+      $("#alertMess").attr("style","width:95%;height:350px");
+    }
+    },time);
+
+
+   setTimeout(()=>{
+    $("#alertMess").attr("style","width:0px;height:0px");
+    $("#none").attr("src","none");
+    if($(window).width()<700){$("#alertMess").attr("style","width:80%;height:400px");}
+ },300000)
+  })
+    
+  $("#red").click(function(){
+    $("#alertMess").attr("style","width:0px;height:0px");
+    $("#none").attr("src","none");
+  })
+
+  $("#yellow").click(function(){
+    $("#alertMess").attr("style","width:50%;height:60%");
+  })
+
+  $("#green").click(function(){
+    if($(window).width()<700){$("#alertMess").attr("style","width:200px;height:150px");}
+    $("#alertMess").attr("style","width:500px;height:400px");
+  })
+
+  $("#cut").click(function(){
+    $("form").attr('style','width:0px;height:0px');
+  })
+
+  $("#exp").click(function(){
+    $("form").attr('style','width:60%;height:75%');
+  })
+   
+  $("#line").click(function(){
+    $("form").attr('style','width:30%;height:75%');
+    if($(window).width()<1000 && $(window).width()>400){
+      $("form").attr('style','width:80%;height:75%;');
+    }
+    if( $(window).width()<400){
+      $("form").attr('style','width:95%;height:75%;');
+    }
+  })
+
+  $("#setting li:nth-child(3),#menuBar li:nth-child(7)").click(function(){
+    $("form").attr('style','width:30%;height:75%');
+    if($(window).width()<1000 && $(window).width()>400){
+      $("form").attr('style','width:80%;height:300px');
+    }
+    if( $(window).width()<400){
+      $("form").attr('style','width:95%;height:75%');
+    }
+  })
+
+})
 export default App;
